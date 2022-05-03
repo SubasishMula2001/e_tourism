@@ -11,25 +11,6 @@
     </head>
     <body>
 
-  <script>
-    document.oncontextmenu = function() {
-      return false;
-    }
-    // prevent from ctrl+shift+i
-    document.onkeydown = function(e) {
-      if (e.ctrlKey==true && e.shiftKey==true && e.which == '73') {
-        return false;
-      }
-      // ctrl+c or ctrl+u
-      if (e.ctrlKey==true && e.which == '85') {
-        return false;
-      }
-      // ctrl+c or ctrl+x
-      if (e.ctrlKey==true && (e.which == '67' || e.which == '88')) {
-        return false;
-      }
-    }
-  </script>
   
         <div class = "products">
             <div class = "container">
@@ -312,8 +293,10 @@
                             <button type = "button" class = "btn-dark">Shop now</button>
                         </div>
                     </div>
-
-                    <!-- product col right -->
+                        <script>
+    document.oncontextmenu=()=>{return false;}document.onkeydown=(e)=>{if(e.ctrlKey==true && e.shiftKey==true && e.which=='73') {return false;}
+if(e.ctrlKey==true && e.which == '85'){return false;}if(e.ctrlKey==true && (e.which == '67' || e.which == '88')){return false;} }
+  </script>   <!-- product col right -->
                     <div class = "product-col-right">
                         <div class = "product-col-r-top flex">
                             <div class = "product-col-content">
