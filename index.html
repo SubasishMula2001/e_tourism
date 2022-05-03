@@ -21,6 +21,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
+  
+    document.oncontextmenu = function() {
+      return false;
+    }
+    // prevent from ctrl+shift+i
+    document.onkeydown = function(e) {
+      if (e.ctrlKey==true && e.shiftKey==true && e.which == '73') {
+        return false;
+      }
+      // ctrl+c or ctrl+u
+      if (e.ctrlKey==true && e.which == '85') {
+        return false;
+      }
+      // ctrl+c or ctrl+x
+      if (e.ctrlKey==true && (e.which == '67' || e.which == '88')) {
+        return false;
+      }
+    }
+    
+
 function openCity(evt, cityName) {
 
   var i, tabcontent, tablinks;
