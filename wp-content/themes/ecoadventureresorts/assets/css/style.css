@@ -7,11 +7,13 @@
 
 /* CSS Document */
 
-.mystory {
-	color: black !important;
-}
+
 * {
 	-webkit-overflow-scrolling: touch;
+}
+
+.mystory {
+	color: black !important;
 }
 
 html {
